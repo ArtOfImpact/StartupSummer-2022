@@ -9,10 +9,10 @@ let User = (props) => {
             <img className="img" src={props.userSearch.avatar_url !== null ? props.userSearch.avatar_url : avatarPNG} />
         </div>
         <div className='user__name'>
-            <span className='name'>{props.userSearch.login}</span>
+            <span className='name'>{props.userSearch.name}</span>
         </div>
         <div className='user__username'>
-            <span className='username'><a target="_blank" href={props.userSearch.html_url}>{props.userSearch.name}</a></span>
+            <span className='username'><a target="_blank" href={props.userSearch.html_url}>{props.userSearch.login}</a></span>
         </div>
         <div className='user__subscriptions subscriptions'>
             <div className='subscriptions__followers'>
