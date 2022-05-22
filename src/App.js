@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import InitialState from './components/emptyState/SearchStart';
+import HeaderContainer from './components/header/HeaderContainer';
+import BodyContainer from './components/body/BodyContainer';
+import PaginationContainer from './components/pagination/PaginationContainer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className='body'>
+        <HeaderContainer />
+        <Routes>
+          <Route path='/' element={<InitialState />} />
+          <Route path='/Users' element={<BodyContainer />} />
+        </Routes>
+        <PaginationContainer />
+      </div>
+    </BrowserRouter>
   );
 }
 

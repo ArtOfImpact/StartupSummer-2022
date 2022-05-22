@@ -1,0 +1,36 @@
+.header {
+    background-color: #0064EB;
+    height: 72px;
+}
+
+.header__container {
+    display: flex;
+    margin: auto;
+    max-width: 1336px;
+    background-color: #0064EB;
+    height: 72px;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
+.container__logo {
+    padding-right: 22px;
+    padding-left: 15px;
+}
+
+.logo {
+    width: 40px;
+}
+
+@media (max-width: 680px) {
+    .container {
+        width: 90%;
+    }
+}

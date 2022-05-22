@@ -1,0 +1,21 @@
+.container__search {
+    width: 80%;
+}
+
+.search {
+    outline: none;
+    padding-left: 45px;
+    background-image: url(../../../photo/img.svg);
+    width: 500px;
+    height: 40px;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: 3% 50%;
+}
+
+@media (max-width: 680px) {
+    .search {
+        width: 70%;
+    }
+}

@@ -1,0 +1,82 @@
+.content__user {
+    width: 30%;
+    font-family: sans-serif;
+}
+
+.user__name {
+    margin-left: 56px;
+    width: 80%;
+}
+
+.user__img {
+    margin: 39px 0px 29px 56px;
+}
+
+.img {
+    width: 81%;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 33px;
+}
+
+.user__username {
+    width: 80%;
+    margin: 12px 0px 25px 56px;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #0064EB;
+}
+
+.username>a {
+    text-decoration: none;
+    color: #0064EB;
+}
+
+.user__subscriptions {
+    margin-left: 56px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.subscriptions__followers {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-right: 10px;
+}
+
+.subscriptions__following {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@media (max-width: 768px) {
+    .content__user {
+        width: 65%;
+    }
+
+    .user__img {
+        margin: 39px 0px 29px 0px;
+        text-align: center;
+    }
+
+    .user__subscriptions {
+        margin-left: 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .subscriptions__followers {
+        padding-bottom: 20px;
+    }
+}

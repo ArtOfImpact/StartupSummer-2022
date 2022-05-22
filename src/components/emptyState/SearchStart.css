@@ -1,0 +1,23 @@
+.state {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 735px;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    width: 208px;
+    color: #808080;
+    text-align: center;
+}
+
+.state__img {
+    width: 64px;
+    padding-bottom: 24px;
+}
